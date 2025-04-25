@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluth's Frozen Banana</title>
+    <style>
+        @import url(template.css);
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="template.html"><img id="Logo" src="Images/bluth_frozen_bananas_sign.svg" alt="Logo">
+        <img id="lil-logo" src="Images/banana_man.svg" alt="Logo"></a>
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="catering.html">Catering</a></li>
+        </ul>
+    </nav>
+    <header style="max-width:1600px;min-width:500px">
+        <img class="background" src="Images/banana_stand.webp" alt="Banana Stand">
+    </header>
+    <main>
+        <div class="three-columns">
+            <div id="column-1">
+                <h2>Hours</h2>
+                <p><span class="day">Monday:</span> 10:30 am to 3:30 pm</p>
+                <p><span class="day">Tuesday:</span> 10:30 am to 3:30 pm</p>
+                <p><span class="day">Wednesday:</span> 10:30 am to 3:30 pm</p>
+                <p><span class="day">Thursday:</span> 10:30 am to 3:30 pm</p>
+                <p><span class="day">Friday:</span> 10:30 am to 3:30 pm</p>
+                <p><span class="day">Saturday:</span> Closed</p>
+                <p><span class="day">Sunday:</span> Closed</p>
+            </div>
+            <div id="column-2">
+                <h2>Our Bananas</h2>
+                <p>At Bluth's Original Frozen Banana Stand, we take pride in sourcing only the freshest and highest quality bananas. Our bananas are carefully selected from trusted suppliers who prioritize sustainability and ethical farming practices. Once handpicked, the bananas undergo a meticulous preparation process, ensuring optimal ripeness and flavor. Each banana is then expertly dipped in rich, velvety chocolate, creating a perfect balance of sweetness and indulgence. </p>
+            </div>
+            <div id="column-3">
+                <h2>Location</h2>
+                <!-- learned how to embed a map via https://blog.hubspot.com/website/how-to-embed-google-map-in-html -->
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13292.060770691323!2d-117.89988634420855!3d33.604910273255456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dce0660186529d%3A0x7eb972e566e7a384!2s110%20Marine%20Ave%2C%20Newport%20Beach%2C%20CA%2092662!5e0!3m2!1sen!2sus!4v1713966857796!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3>110 Marine Ave, Newport Beach, CA 92662</h3>
+            </div>
+        </div>
+        <h1><a href="index.html">Return Home</a></h1>
+    </main>
+    <footer>
+        <!-- Learned how to do social media buttons from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <ul id="socials">
+            <li><a href="#" class="fa fa-instagram"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-linkedin"></a></li>
+        </ul>
+        <p>&copy; 2024 Sam Poynter, All rights reserved</p>
+    </footer>
+</body>
+</html>

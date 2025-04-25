@@ -1,0 +1,193 @@
+/* I used ex8, and https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_gourmet_catering&stacked=h for a lot of this */
+
+/* nav styles */
+nav {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgb(172,11,11),0 2px 10px 0 rgb(0,0,0);
+    /* learned box shadow from https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm */
+}
+nav ul li a {
+    display: block;
+    border: 1px transparent;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em;
+    
+}
+nav ul {
+    margin: 0;
+    margin-top: -50px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+
+}
+nav ul li {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+/* header styles */
+header {
+    color:floralwhite;
+}
+header h1 {
+    font-family: 'Prettywise Heavy';
+    color: #000000;
+    text-align: center;
+    margin-top: 4em;
+}
+.background {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* link styles */
+nav ul li a:link, nav ul li a:visited {
+    color: rgb(74,83,125);
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+    color: rgb(252,195,46);
+}
+a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    font-size: large;
+}
+
+/* logo styles */
+#Logo {
+    justify-content: left;
+    width: 9.5em;
+    height: auto;
+}
+#lil-logo {
+    display: none;
+}
+
+/* main styles, got help with this from https://matthewjamestaylor.com/3-column-layouts#responsive-3-column-grid */
+.three-columns {
+    display: block;
+    color: white; 
+    text-shadow: 2px 2px 4px black;
+}
+.three-columns > * {
+    padding: 1rem;
+}
+#column-1 {
+    background-color: rgb(252,195,46);
+}
+#column-2 {
+    background-color: rgb(172,11,11)
+}
+#column-3 {
+    background-color: rgb(74,83,125);
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#map {
+    width: 100%;
+    height: auto;
+}
+h3 {
+    text-align: center;
+}
+/* footer styles */
+footer {
+    background-color: white;
+    bottom: 0;
+    border: rgb(255, 255, 255);
+    border-style: solid;
+    box-shadow: 0 -2px 5px 0 rgb(172,11,11),0 2px 10px 0 rgb(0,0,0);
+}
+footer ul {
+    color: rgb(252,195,46);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+footer p {
+    color: rgb(74,83,125);
+    font: bolder;
+    text-align: center;
+}
+
+/* social media buttons */
+#socials {
+    justify-content: center;
+}
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-inline: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.fa:hover {
+    opacity: 0.7;
+}
+/* Learned this from https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3 */
+.fa:active {
+    transform: translateY(4px);
+}
+.fa-instagram {
+    color: white;
+    background-color: #ac2bac;
+}
+.fa-twitter {
+    color: white;
+    background-color: #55acee;
+}
+.fa-facebook {
+    color: white;
+    background-color: #3b5998;
+}
+.fa-linkedin {
+    color: white;
+    background-color: #0082ca;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+    /* also from https://matthewjamestaylor.com/3-column-layouts#responsive-3-column-grid */
+    .three-columns {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 768px) {
+    #lil-logo {
+        display: inline;
+        width: 10%;
+        height: auto;
+    }
+    #Logo {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .background {
+        width: 75%;
+    }
+    nav ul li a {
+        padding: 0em;
+        margin-bottom: 1em;
+        border: solid;
+    }
+}
